@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #004d99;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.inbox h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.message-list {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.message-item .sender {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.message-item .subject {
+    color: #555;
+    font-size: 0.8rem;
+}
+
+.message-item .message-preview {
+    font-size: 18px;
+    color: #777;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.view-message {
+    display: inline-block;
+    margin-top: 10px;
+    color: #004d99;
+    text-decoration: none;
+}
+
+.view-message:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

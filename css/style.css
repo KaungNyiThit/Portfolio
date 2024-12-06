@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f8f4ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+}
+
+.alrt {
+    width: 50%; 
+    text-align:center; 
+    position: static;
+    padding: 20px;
+    background-color: aquamarine;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.toggle-dark-mode{
+    border: none;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    line-height: 50px;
+    align-items: center;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #121212;
+}
+
+.uploadBtn{
+    width: 140px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.add {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.intro-left, .intro-right{
+    width: 48%;
+}
+
+.intro-left{
+    padding-left: 50px;
+}
+
+.intro-left h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode header{
+    background-color: #1e1e1e;
+    color: #fff;
+}
+body.dark-mode nav ul li a {
+    color: #fff;
+
+}
+
+body.dark-mode .alrt{
+    color: #121212;
+}
+
+body.dark-mode .add{
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+body.dark-mode  .toggle-dark-mode{
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+body.dark-mode .intro {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+
+.profile-img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+.intro-right h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.projects {
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.projects:hover{
+    transform: translateY(-9px);
+}
+
+.projects ul {
+    list-style-type: decimal-leading-zero;
+}
+
+
+.add_award{
+    font-size: 0.8rem;
+    width: 100px;
+}
+
+.add_award a{
+    text-decoration: none;
+}
+.award{
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.award:hover{
+    transform: translateY(-10px);
+}
+
+.award ul li{
+    list-style: circle;
+    
+}
+
+@media (max-width: 600px) {
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    nav button {
+        font-size: 0.8rem;
+        line-height: 30px;
+    }
+
+    .uploadBtn{
+        width: 120px;
+    }
+
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+  
+    .intro-left {
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+    .intro-right h2{
+        font-size: 1.5rem;
+    }
+    .intro-left, .intro-right {
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .projects {
+        padding: 15px;
+
+    }
+
+    .projects h2 {
+        font-size: 1rem;
+    }
+
+    .award{
+        padding: 15px;
+    }
+
+    .award h2 {
+        font-size: 1.3rem;
+    }
+
+    .award h5{
+        font-size: 1.1rem;
+    }
+    
+    .info{
+        position: static;
+        width: 50%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
