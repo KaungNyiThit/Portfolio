@@ -56,6 +56,14 @@ class Table {
         }
     }
 
+    public function updateProfile($data){
+        $statement = $this->db->prepare(
+            "UPDATE users SET name=:name, email=:email, password=:password WHERE id=:id"
+        );
+        $statement->execute($data);
+        return $this->db->lastInsertId();
+    }
+
     public function getUserInfo(){
         $statement = $this->db->query(
             'SELECT * FROM users'

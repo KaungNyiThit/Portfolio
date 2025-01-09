@@ -15,7 +15,7 @@
 <body style="padding-top: 100px">
 <button class="d-none toggle-dark-mode">Dark Mode On 🌙</button>
 <div class="container my-5" style="max-width: 600px ; border: 1px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border-radius: 10px; padding: 20px;">
-        <form action="_actions/create.php" method="POST" id="registerForm">
+        <form action="../_actions/create.php" method="POST" id="registerForm">
 
         <?php if(isset($_GET['email'])) :?>
         <div class="alert alert-danger text-center">

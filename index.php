@@ -84,7 +84,9 @@ $auth = Auth::user();
            <img src="_actions/photos/<?= $info->photo ?>" alt="My Photo" class="profile-img"> 
 
            <div class="uploadBtn">
-           <a href="e_s_r/edit.php" style="float: right"><i class="fas fa-edit"></i></a>
+           <?php if($auth && $auth->role === 'admin') : ?>
+                <a href="e_s_r/edit.php" style="float: right"><i class="fas fa-edit"></i></a>
+                <?php endif ?>
            </div>
         
 

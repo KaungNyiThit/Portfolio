@@ -47,7 +47,7 @@ $adminInfo = $table->getAdminInfo();
     <?php endforeach ?>
         <button class="btn btn-primary my-3 " type="submit">Upload</button>
 
-        <a href="../index.php" class="btn btn-primary" style="text-decoration: none">Back</button></a>
+        <a href="../index.php" class="btn btn-primary" style="text-decoration: none">Back</a>
     </form>    
 </div>
 </body>
